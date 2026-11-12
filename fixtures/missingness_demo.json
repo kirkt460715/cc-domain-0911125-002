@@ -1,0 +1,215 @@
+{
+  "batch": {
+    "batch_id": "missing-demo",
+    "content": "{\"event_id\": \"evt001\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:00:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt002\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:01:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt003\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:02:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt004\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:03:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt005\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:04:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt006\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:05:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt007\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:06:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt008\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:07:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt009\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:08:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt010\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:09:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt011\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:10:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt012\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:11:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt013\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:12:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt014\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:13:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt015\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:14:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt016\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:15:00Z\", \"value\": \"72.30\", \"unit\": \"C\"}\n{\"event_id\": \"evt017\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:16:00Z\", \"value\": \"75.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt018\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:17:00Z\", \"value\": \"77.70\", \"unit\": \"C\"}\n{\"event_id\": \"evt019\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:19:00Z\", \"value\": \"81.90\", \"unit\": \"C\"}\n{\"event_id\": \"evt020\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:20:00Z\", \"value\": \"84.60\", \"unit\": \"C\"}\n{\"event_id\": \"evt021\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:21:00Z\", \"value\": \"86.10\", \"unit\": \"C\"}\n{\"event_id\": \"evt022\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:23:00Z\", \"value\": \"91.50\", \"unit\": \"C\"}\n{\"event_id\": \"evt023\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:24:00Z\", \"value\": \"93.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt024\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:25:00Z\", \"value\": \"95.70\", \"unit\": \"C\"}\n{\"event_id\": \"evt025\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:27:00Z\", \"value\": \"99.90\", \"unit\": \"C\"}\n{\"event_id\": \"evt026\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:28:00Z\", \"value\": \"102.60\", \"unit\": \"C\"}\n{\"event_id\": \"evt027\", \"device\": \"sensor1\", \"observed_at\": \"2026-11-12T08:29:00Z\", \"value\": \"105.30\", \"unit\": \"C\"}\n{\"event_id\": \"evt028\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:00:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt029\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:01:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt030\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:02:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt031\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:03:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt032\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:04:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt033\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:05:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt034\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:06:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt035\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:07:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt036\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:08:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt037\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:09:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt038\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:10:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt039\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:11:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt040\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:12:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt041\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:13:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt042\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:14:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt043\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:15:00Z\", \"value\": \"72.30\", \"unit\": \"C\"}\n{\"event_id\": \"evt044\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:16:00Z\", \"value\": \"75.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt045\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:18:00Z\", \"value\": \"79.20\", \"unit\": \"C\"}\n{\"event_id\": \"evt046\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:19:00Z\", \"value\": \"81.90\", \"unit\": \"C\"}\n{\"event_id\": \"evt047\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:20:00Z\", \"value\": \"84.60\", \"unit\": \"C\"}\n{\"event_id\": \"evt048\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:22:00Z\", \"value\": \"88.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt049\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:23:00Z\", \"value\": \"91.50\", \"unit\": \"C\"}\n{\"event_id\": \"evt050\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:24:00Z\", \"value\": \"93.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt051\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:26:00Z\", \"value\": \"98.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt052\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:27:00Z\", \"value\": \"99.90\", \"unit\": \"C\"}\n{\"event_id\": \"evt053\", \"device\": \"sensor2\", \"observed_at\": \"2026-11-12T08:29:00Z\", \"value\": \"105.30\", \"unit\": \"C\"}\n{\"event_id\": \"evt054\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:00:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt055\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:01:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt056\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:02:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt057\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:03:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt058\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:04:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt059\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:05:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt060\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:06:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt061\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:07:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt062\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:08:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt063\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:09:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt064\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:10:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt065\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:11:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt066\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:12:00Z\", \"value\": \"70.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt067\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:13:00Z\", \"value\": \"70.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt068\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:14:00Z\", \"value\": \"70.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt069\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:15:00Z\", \"value\": \"72.30\", \"unit\": \"C\"}\n{\"event_id\": \"evt070\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:16:00Z\", \"value\": \"75.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt071\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:17:00Z\", \"value\": \"77.70\", \"unit\": \"C\"}\n{\"event_id\": \"evt072\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:18:00Z\", \"value\": \"79.20\", \"unit\": \"C\"}\n{\"event_id\": \"evt073\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:20:00Z\", \"value\": \"84.60\", \"unit\": \"C\"}\n{\"event_id\": \"evt074\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:21:00Z\", \"value\": \"86.10\", \"unit\": \"C\"}\n{\"event_id\": \"evt075\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:22:00Z\", \"value\": \"88.80\", \"unit\": \"C\"}\n{\"event_id\": \"evt076\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:24:00Z\", \"value\": \"93.00\", \"unit\": \"C\"}\n{\"event_id\": \"evt077\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:25:00Z\", \"value\": \"95.70\", \"unit\": \"C\"}\n{\"event_id\": \"evt078\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:26:00Z\", \"value\": \"98.40\", \"unit\": \"C\"}\n{\"event_id\": \"evt079\", \"device\": \"sensor3\", \"observed_at\": \"2026-11-12T08:28:00Z\", \"value\": \"102.60\", \"unit\": \"C\"}\n",
+    "source": "feed1"
+  },
+  "conditions": {
+    "rows": [
+      {
+        "device_id": "dev1",
+        "load": "low",
+        "valid_from": "2026-11-12T08:00:00Z",
+        "valid_until": "2026-11-12T08:15:00Z"
+      },
+      {
+        "device_id": "dev1",
+        "load": "high",
+        "valid_from": "2026-11-12T08:15:00Z",
+        "valid_until": "2026-11-12T08:30:00Z"
+      },
+      {
+        "device_id": "dev2",
+        "load": "low",
+        "valid_from": "2026-11-12T08:00:00Z",
+        "valid_until": "2026-11-12T08:15:00Z"
+      },
+      {
+        "device_id": "dev2",
+        "load": "high",
+        "valid_from": "2026-11-12T08:15:00Z",
+        "valid_until": "2026-11-12T08:30:00Z"
+      },
+      {
+        "device_id": "dev3",
+        "load": "low",
+        "valid_from": "2026-11-12T08:00:00Z",
+        "valid_until": "2026-11-12T08:15:00Z"
+      },
+      {
+        "device_id": "dev3",
+        "load": "high",
+        "valid_from": "2026-11-12T08:15:00Z",
+        "valid_until": "2026-11-12T08:30:00Z"
+      }
+    ],
+    "source": "ops-log",
+    "version": "v1"
+  },
+  "scenarios": [
+    {
+      "assumptions": [
+        {
+          "offset": "0",
+          "strata": {
+            "load": "low"
+          }
+        },
+        {
+          "offset": "0",
+          "strata": {
+            "load": "high"
+          }
+        }
+      ],
+      "scenario_id": "no-offset"
+    },
+    {
+      "assumptions": [
+        {
+          "offset": "0",
+          "strata": {
+            "load": "low"
+          }
+        },
+        {
+          "maximum": "130",
+          "minimum": "90",
+          "offset": "6",
+          "strata": {
+            "load": "high"
+          }
+        }
+      ],
+      "scenario_id": "hot-missing"
+    }
+  ],
+  "setup": [
+    {
+      "operation": "device.register",
+      "parameters": {
+        "aircraft": "plane1",
+        "canonical_unit": "C",
+        "component": "engine1",
+        "device_id": "dev1",
+        "metric": "temperature"
+      }
+    },
+    {
+      "operation": "alias.add",
+      "parameters": {
+        "device_id": "dev1",
+        "external_id": "sensor1",
+        "source": "feed1",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2027-01-01T00:00:00Z"
+      }
+    },
+    {
+      "operation": "calibration.add",
+      "parameters": {
+        "calibration_id": "cal-dev1",
+        "device_id": "dev1",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2027-01-01T00:00:00Z"
+      }
+    },
+    {
+      "operation": "quality.configure",
+      "parameters": {
+        "device_id": "dev1",
+        "maximum": "150",
+        "minimum": "-50"
+      }
+    },
+    {
+      "operation": "device.register",
+      "parameters": {
+        "aircraft": "plane2",
+        "canonical_unit": "C",
+        "component": "engine1",
+        "device_id": "dev2",
+        "metric": "temperature"
+      }
+    },
+    {
+      "operation": "alias.add",
+      "parameters": {
+        "device_id": "dev2",
+        "external_id": "sensor2",
+        "source": "feed1",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2027-01-01T00:00:00Z"
+      }
+    },
+    {
+      "operation": "calibration.add",
+      "parameters": {
+        "calibration_id": "cal-dev2",
+        "device_id": "dev2",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2027-01-01T00:00:00Z"
+      }
+    },
+    {
+      "operation": "quality.configure",
+      "parameters": {
+        "device_id": "dev2",
+        "maximum": "150",
+        "minimum": "-50"
+      }
+    },
+    {
+      "operation": "device.register",
+      "parameters": {
+        "aircraft": "plane3",
+        "canonical_unit": "C",
+        "component": "engine1",
+        "device_id": "dev3",
+        "metric": "temperature"
+      }
+    },
+    {
+      "operation": "alias.add",
+      "parameters": {
+        "device_id": "dev3",
+        "external_id": "sensor3",
+        "source": "feed1",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2027-01-01T00:00:00Z"
+      }
+    },
+    {
+      "operation": "calibration.add",
+      "parameters": {
+        "calibration_id": "cal-dev3",
+        "device_id": "dev3",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2027-01-01T00:00:00Z"
+      }
+    },
+    {
+      "operation": "quality.configure",
+      "parameters": {
+        "device_id": "dev3",
+        "maximum": "150",
+        "minimum": "-50"
+      }
+    }
+  ],
+  "study": {
+    "alarm_threshold": "95",
+    "bootstrap_samples": 300,
+    "end": "2026-11-12T08:30:00Z",
+    "interval_seconds": 60,
+    "period_seconds": 900,
+    "physical_maximum": "150",
+    "physical_minimum": "-50",
+    "seed": 20261112,
+    "start": "2026-11-12T08:00:00Z",
+    "strata_fields": [
+      "load"
+    ],
+    "study_id": "egt-missingness"
+  }
+}

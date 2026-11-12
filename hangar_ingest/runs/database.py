@@ -66,6 +66,64 @@ CREATE TABLE IF NOT EXISTS source_watermarks(
  source TEXT PRIMARY KEY,watermark TEXT NOT NULL,revision INTEGER NOT NULL);
 CREATE TABLE IF NOT EXISTS processing_claims(
  batch_id TEXT PRIMARY KEY,owner TEXT NOT NULL,generation INTEGER NOT NULL,expires_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS studies(
+ study_id TEXT PRIMARY KEY,state TEXT NOT NULL,revision INTEGER NOT NULL,
+ metric TEXT NOT NULL,interval_seconds INTEGER NOT NULL,period_seconds INTEGER NOT NULL,
+ grid_start TEXT NOT NULL,grid_end TEXT NOT NULL,frozen_at TEXT NOT NULL,
+ cutoff_at TEXT NOT NULL,strata_fields TEXT NOT NULL,
+ physical_minimum TEXT NOT NULL,physical_maximum TEXT NOT NULL,
+ alarm_threshold TEXT NOT NULL,bootstrap_samples INTEGER NOT NULL,seed INTEGER NOT NULL,
+ definition_hash TEXT NOT NULL,created_at TEXT NOT NULL,updated_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS study_devices(
+ study_id TEXT NOT NULL REFERENCES studies(study_id),device_id TEXT NOT NULL,
+ aircraft TEXT NOT NULL,operational_start TEXT NOT NULL,operational_end TEXT NOT NULL,
+ rule_revision INTEGER NOT NULL,PRIMARY KEY(study_id,device_id));
+CREATE TABLE IF NOT EXISTS study_outages(
+ study_id TEXT NOT NULL REFERENCES studies(study_id),outage_id TEXT NOT NULL,
+ device_id TEXT NOT NULL,start TEXT NOT NULL,end TEXT NOT NULL,reason TEXT NOT NULL,
+ PRIMARY KEY(study_id,outage_id));
+CREATE TABLE IF NOT EXISTS study_alias_snapshots(
+ study_id TEXT NOT NULL,source TEXT NOT NULL,external_id TEXT NOT NULL,
+ device_id TEXT NOT NULL,valid_from TEXT NOT NULL,valid_until TEXT NOT NULL,
+ PRIMARY KEY(study_id,source,external_id,device_id,valid_from));
+CREATE TABLE IF NOT EXISTS study_calibration_snapshots(
+ study_id TEXT NOT NULL,calibration_id TEXT NOT NULL,device_id TEXT NOT NULL,
+ valid_from TEXT NOT NULL,valid_until TEXT NOT NULL,scale TEXT NOT NULL,
+ offset TEXT NOT NULL,clock_offset_us INTEGER NOT NULL,revision INTEGER NOT NULL,
+ PRIMARY KEY(study_id,calibration_id));
+CREATE TABLE IF NOT EXISTS study_rule_snapshots(
+ study_id TEXT NOT NULL,device_id TEXT NOT NULL,revision INTEGER NOT NULL,
+ minimum TEXT,maximum TEXT,max_delta TEXT,max_gap_seconds INTEGER NOT NULL,
+ duplicate_policy TEXT NOT NULL,required_calibration INTEGER NOT NULL,
+ payload TEXT NOT NULL,PRIMARY KEY(study_id,device_id));
+CREATE TABLE IF NOT EXISTS study_cells(
+ study_id TEXT NOT NULL,cell_index INTEGER NOT NULL,device_id TEXT NOT NULL,
+ aircraft TEXT NOT NULL,cell_start TEXT NOT NULL,cell_end TEXT NOT NULL,
+ disposition TEXT NOT NULL,disposition_reason TEXT NOT NULL,
+ observation_id TEXT,calibration_id TEXT,
+ calibration_revision INTEGER,alias_resolved INTEGER NOT NULL,
+ calibration_covered INTEGER NOT NULL,rule_revision INTEGER NOT NULL,
+ duplicate_count INTEGER NOT NULL,quarantine_id TEXT,outage_id TEXT,
+ value TEXT,strata TEXT NOT NULL,
+ PRIMARY KEY(study_id,cell_index,device_id));
+CREATE INDEX IF NOT EXISTS study_cells_lookup ON study_cells(study_id,device_id,cell_start);
+CREATE TABLE IF NOT EXISTS study_conditions(
+ study_id TEXT NOT NULL,revision INTEGER NOT NULL,source TEXT NOT NULL,
+ version TEXT NOT NULL,imported_at TEXT NOT NULL,payload_hash TEXT NOT NULL,
+ PRIMARY KEY(study_id,revision));
+CREATE TABLE IF NOT EXISTS study_condition_rows(
+ study_id TEXT NOT NULL,revision INTEGER NOT NULL,row_number INTEGER NOT NULL,
+ device_id TEXT NOT NULL,valid_from TEXT NOT NULL,valid_until TEXT NOT NULL,
+ fields TEXT NOT NULL,PRIMARY KEY(study_id,revision,row_number));
+CREATE TABLE IF NOT EXISTS study_models(
+ study_id TEXT NOT NULL,model_id TEXT NOT NULL,method TEXT NOT NULL,
+ regularization TEXT NOT NULL,features TEXT NOT NULL,folds INTEGER NOT NULL,
+ coefficients TEXT NOT NULL,metrics TEXT NOT NULL,support_ok INTEGER NOT NULL,
+ created_at TEXT NOT NULL,PRIMARY KEY(study_id,model_id));
+CREATE TABLE IF NOT EXISTS study_scenarios(
+ study_id TEXT NOT NULL,scenario_id TEXT NOT NULL,assumptions_hash TEXT NOT NULL,
+ assumptions TEXT NOT NULL,results TEXT NOT NULL,created_at TEXT NOT NULL,
+ PRIMARY KEY(study_id,scenario_id));
 '''
 
 

@@ -36,6 +36,8 @@ def make_parser():
     export.add_argument('--format', choices=['directory', 'csv', 'ndjson'], default='directory')
     demo = sub.add_parser('demo')
     demo.add_argument('--fixture', required=True)
+    missing = sub.add_parser('missingness-demo')
+    missing.add_argument('--fixture', required=True)
     return parser
 
 
@@ -117,6 +119,9 @@ def dispatch(app, args):
         return write_new(args.destination, content)
     if args.command == 'demo':
         return demo(app, json_input(args.fixture))
+    if args.command == 'missingness-demo':
+        from hangar_ingest.studies.demo import run
+        return run(app, json_input(args.fixture))
     fail('unknown_command', 'Unknown command')
 
 

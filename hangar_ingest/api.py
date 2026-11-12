@@ -5,6 +5,7 @@ from hangar_ingest.runs import batches, claims, inspection, journal, partitions,
 from hangar_ingest.runs.orchestrator import Pipeline
 from hangar_ingest.exports import releases, tabular, watermarks, transfer
 from hangar_ingest.exports.contracts import DeliveryContracts
+from hangar_ingest.studies import registry, grid, conditions, missingness, scenarios, artifacts
 
 
 class Application:
@@ -99,6 +100,29 @@ class Application:
             'inspect.lineage': (inspection.lineage, {'release_id'}, set()),
             'journal.verify': (journal.verify, set(), set()),
             'journal.page': (journal.page, set(), {'after', 'limit'}),
+            'study.create': (registry.create_study,
+                             {'study_id', 'device_windows', 'start', 'end', 'interval_seconds',
+                              'physical_minimum', 'physical_maximum', 'alarm_threshold'},
+                             {'period_seconds', 'metric', 'frozen_at', 'cutoff_at', 'strata_fields',
+                              'bootstrap_samples', 'seed'}),
+            'study.get': (registry.get_study, {'study_id'}, set()),
+            'study.list': (registry.list_studies, set(), {'state'}),
+            'study.replay': (registry.definition_replay, {'study_id'}, set()),
+            'study.grid': (grid.build_grid, {'study_id'}, set()),
+            'study.grid_report': (grid.grid_report, {'study_id'}, set()),
+            'study.cells': (grid.cells, {'study_id'}, {'disposition', 'device_id'}),
+            'study.conditions.import': (conditions.import_conditions,
+                                        {'study_id', 'rows', 'source', 'version'}, set()),
+            'study.conditions.annotate': (conditions.annotate, {'study_id'}, {'revision'}),
+            'study.strata_report': (conditions.strata_report, {'study_id'}, set()),
+            'study.model.fit': (missingness.fit_model, {'study_id', 'model_id'}, {'penalty'}),
+            'study.model.get': (missingness.get_model, {'study_id', 'model_id'}, set()),
+            'study.model.weighted_mean': (missingness.weighted_mean, {'study_id', 'model_id'}, set()),
+            'study.scenario': (scenarios.evaluate, {'study_id', 'scenario_id', 'assumptions'}, {'model_id'}),
+            'study.scenarios': (scenarios.list_scenarios, {'study_id'}, set()),
+            'study.evidence': (artifacts.evidence, {'study_id'}, set()),
+            'study.evidence.verify': (artifacts.verify_bundle, {'study_id'}, set()),
+            'study.evidence.export': (artifacts.export_bundle, {'study_id', 'destination'}, set()),
         }
         self.bound = {
             'source.register': (self.sources.register, {'manifest_id', 'source', 'start', 'end', 'events'}, {'revision'}),
